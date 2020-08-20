@@ -2,7 +2,7 @@
 
 **This DatoCMS plugin makes it possible to add/insert a key and value to output a simple JSON table. The plugin is build as a custom field editor for the DatoCMS JSON fields.**
 
-![Head image](docs/cover.jpg)
+![Head image](docs/preview.gif)
 
 When you input a key and value the output will be:
 ```json
@@ -36,7 +36,7 @@ There are two settings for configuration of the JSON table.
 
 If the `Editor may add item` (Default: `true`), the button with `+ ADD ITEM` will be shown. If this button is set to `false`, the editor will not be able to add any items.
 
-`Required fields` is a comma seperated list of items that should be required. When an item is added to this list it will show automatically as an entry in the JSON table.
+`Required fields` is a comma seperated list of keys that should be required. When a key is added to this list it will show automatically as an entry in the JSON table.
 
 ![Screenshot required fields](docs/json-table-required-fields.jpg)
 
