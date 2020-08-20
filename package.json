@@ -2,7 +2,7 @@
   "name": "datocms-plugin-json-table",
   "homepage": "https://github.com/voorhoede/datocms-plugin-json-table",
   "version": "1.0.0",
-  "description": "Make it possible to add/insert a key and value for a simple json output",
+  "description": "Make it possible to add/insert a key and value to output simple json",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --port 5000",
@@ -26,7 +26,7 @@
     "docs"
   ],
   "author": "Voorhoede",
-  "license": "ISC",
+  "license": "MIT",
   "datoCmsPlugin": {
     "title": "JSON Table",
     "previewImage": "docs/preview.gif",
