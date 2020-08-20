@@ -1,0 +1,7 @@
+.pair-list__error {
+  line-height: 1.2;
+  margin-top: .375rem;
+  font-size: .75rem;
+  color: var(--danger-color);
+  margin-top: var(--spacing-default);
+}

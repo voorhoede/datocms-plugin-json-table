@@ -1,0 +1,17 @@
+.key-value-pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-default);
+}
+
+.key-value-pair input {
+  max-width: 40%;
+  margin-right: var(--spacing-default);
+}
+
+.key-value-pair__input--error,
+.key-value-pair__input--error[disabled][disabled],
+.key-value-pair__input--error:focus {
+  border-color: var(--danger-color);
+}
+
