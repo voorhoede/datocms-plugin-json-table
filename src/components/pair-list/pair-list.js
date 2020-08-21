@@ -4,7 +4,7 @@ import KeyValuePair from '../key-value-pair/key-value-pair'
 import {
   isKeyInArray,
   getDoubleKeysFromArray,
-} from '../../../lib/helpers'
+} from '../../lib/helpers'
 import './pair-list.css'
 
 export default function PairList({

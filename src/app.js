@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AppHeader from './components/app-header/app-header'
 import PairList from './components/pair-list/pair-list'
-import { arrayToObj, objectToArray, getArrayFromList } from '../lib/helpers'
+import { arrayToObj, objectToArray, getArrayFromList } from './lib/helpers'
 
 export default function App({ plugin }) {
   const fieldPath = JSON.parse(plugin.getFieldValue(plugin.fieldPath)) || {}
