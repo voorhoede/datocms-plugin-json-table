@@ -52,7 +52,7 @@ To give keys a default value you can use the `Default value` tab of the JSON fie
 ```
 will result in having the same keys and values as default.
 
-![S](docs/json-table-default-values.jpg)
+![](docs/json-table-default-values.jpg)
 
 Adding the same keys to the `Required fields` will result in having default values for required fields where the editor is only allowed to edit values and not allowed to edit keys.
 
