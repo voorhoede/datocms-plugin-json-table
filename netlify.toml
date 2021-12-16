@@ -1,5 +1,0 @@
-[build]
-  command = "yarn build"
-  publish = "dist/"
-  [build.processing]
-    skip_processing = true

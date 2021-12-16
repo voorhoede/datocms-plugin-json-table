@@ -1,9 +1,0 @@
-.app-header {
-  display: flex;
-  margin-bottom: var(--spacing-default);
-}
-
-.app-header span {
-  width: 40%;
-  margin-left: var(--spacing-default);
-}

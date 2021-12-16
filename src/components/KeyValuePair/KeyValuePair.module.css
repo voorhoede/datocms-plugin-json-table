@@ -1,0 +1,11 @@
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-m);
+}
+
+.fieldGroup {
+  width: 100%;
+  max-width: 40%;
+  margin-right: var(--spacing-m);
+}

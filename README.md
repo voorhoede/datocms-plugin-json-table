@@ -60,10 +60,6 @@ Adding the same keys to the `Required fields` will result in having default valu
 
 See [contributing.md](https://github.com/voorhoede/datocms-plugin-json-table/blob/master/contributing.md).
 
-## Credits
-
-Scaffolded using [DatoCMS plugin Yeoman generator](https://github.com/datocms/generator-datocms-plugin).
-
 ## License
 
 *MIT Licensed* by [De Voorhoede](https://www.voorhoede.nl).
