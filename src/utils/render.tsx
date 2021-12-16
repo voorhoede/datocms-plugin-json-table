@@ -1,7 +1,7 @@
-import React, { StrictMode } from 'react'
+import { StrictMode, ReactNode } from 'react'
 import ReactDOM from 'react-dom'
 
-export function render(component: React.ReactNode): void {
+export function render(component: ReactNode): void {
   ReactDOM.render(
     <StrictMode>{component}</StrictMode>,
     document.getElementById('root')
