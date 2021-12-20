@@ -110,7 +110,7 @@ export default function PairList({
         )}
       </Form>
       {existingElementKeys.length > 0 && (
-        <p className={styles.error}>All keys need to be unique</p>
+        <p className={styles.error}>All keys need to be unique. Saving this can result in data loss.</p>
       )}
     </>
   )
