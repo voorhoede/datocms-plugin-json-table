@@ -15,9 +15,9 @@ export default function PairList({
   mayAddItem,
   onUpdateField,
 }: Props) {
-  const [updatingValueList, setUpdatingValueList] = useState(valueList)
-  const [newItemId, setNewItemId] = useState(0)
-  const [existingElementKeys, setExistingElementKeys] = useState([])
+  const [updatingValueList, setUpdatingValueList] = useState<any[]>(valueList)
+  const [newItemId, setNewItemId] = useState<number>(0)
+  const [existingElementKeys, setExistingElementKeys] = useState<any[]>([])
 
   function handleUpdateField(updatedValueList: any[]) {
     setUpdatingValueList(updatedValueList)

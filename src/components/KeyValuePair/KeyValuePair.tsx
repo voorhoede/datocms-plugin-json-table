@@ -23,9 +23,9 @@ export default function KeyValuePair({
   isExisting,
   isRequired,
 }: Props) {
-  const [inputKey, setInputKey] = useState(keyPair)
-  const [inputValue, setInputValue] = useState(valuePair)
-  const inputIsDisabled = id.indexOf('default') === 0 && isRequired
+  const [inputKey, setInputKey] = useState<string>(keyPair)
+  const [inputValue, setInputValue] = useState<string>(valuePair)
+  const inputIsDisabled: boolean = id.indexOf('default') === 0 && isRequired
 
   function handleKeyChange(newValue: string) {
     onKeyChange(newValue)

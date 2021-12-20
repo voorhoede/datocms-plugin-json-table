@@ -9,11 +9,12 @@ type Props = {
 }
 
 export default function FieldExtension({ ctx }: Props) {
-  const pluginParameters = ctx.parameters
+  const pluginParameters: any = ctx.parameters
+  const requiredFieldsParameter: string = pluginParameters?.requiredFields
 
   const fieldValue: string = String(ctx?.formValues?.[ctx.fieldPath])
   const parsedFieldValue: object = JSON.parse(fieldValue) || {}
-  const requiredFields: any[] = getArrayFromList(pluginParameters?.requiredFields || '')
+  const requiredFields: any[] = getArrayFromList(requiredFieldsParameter || '')
 
   const valueObj = requiredFields.reduce((acc, field) => {
     if (acc[field]) {
