@@ -1,3 +1,4 @@
+import get from 'lodash/get'
 import { RenderFieldExtensionCtx  } from 'datocms-plugin-sdk'
 import { Canvas } from 'datocms-react-ui'
 import AppHeader from '../components/AppHeader/AppHeader'
@@ -12,7 +13,7 @@ export default function FieldExtension({ ctx }: Props) {
   const pluginParameters: any = ctx.parameters
   const requiredFieldsParameter: string = pluginParameters?.requiredFields
 
-  const fieldValue: string = String(ctx?.formValues?.[ctx.fieldPath])
+  const fieldValue: string = String(get(ctx.formValues, ctx.fieldPath))
   const parsedFieldValue: object = JSON.parse(fieldValue) || {}
   const requiredFields: any[] = getArrayFromList(requiredFieldsParameter || '')
 
