@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  margin-bottom: var(--spacing-m);
+}
+
+.header span {
+  width: 40%;
+  margin-left: var(--spacing-m);
+}
