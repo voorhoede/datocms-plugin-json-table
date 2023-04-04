@@ -2,7 +2,7 @@
 
 **This DatoCMS plugin makes it possible to add/insert a key and value to output a simple JSON table. The plugin is build as a custom field editor for DatoCMS JSON fields.**
 
-![](https://github.com/voorhoede/datocms-plugin-json-table/raw/master/docs/preview.gif)
+![](https://github.com/voorhoede/datocms-plugin-json-table/raw/main/docs/preview.gif)
 
 When you input a key and value the output will be:
 ```json
@@ -22,7 +22,7 @@ When you input a key and value the output will be:
 
 For each entry in the JSON we show a key and value.
 
-![](https://github.com/voorhoede/datocms-plugin-json-table/raw/master/docs/json-table-added.jpg)
+![](https://github.com/voorhoede/datocms-plugin-json-table/raw/main/docs/json-table-added.jpg)
 
 ## Configuration
 
@@ -38,7 +38,7 @@ If the `Editor may add item` (Default: `true`), the button with `+ ADD ITEM` wil
 
 `Required fields` is a comma seperated list of keys that should be required. When a key is added to this list it will show automatically as an entry in the JSON table.
 
-![](https://github.com/voorhoede/datocms-plugin-json-table/raw/master/docs/json-table-required-fields.jpg)
+![](https://github.com/voorhoede/datocms-plugin-json-table/raw/main/docs/json-table-required-fields.jpg)
 
 #### Default values
 
@@ -52,13 +52,13 @@ To give keys a default value you can use the `Default value` tab of the JSON fie
 ```
 will result in having the same keys and values as default.
 
-![](https://github.com/voorhoede/datocms-plugin-json-table/raw/master/docs/json-table-default-values.jpg)
+![](https://github.com/voorhoede/datocms-plugin-json-table/raw/main/docs/json-table-default-values.jpg)
 
 Adding the same keys to the `Required fields` will result in having default values for required fields where the editor is only allowed to edit values and not allowed to edit keys.
 
 ## Contributing
 
-See [contributing.md](https://github.com/voorhoede/datocms-plugin-json-table/blob/master/contributing.md).
+See [contributing.md](https://github.com/voorhoede/datocms-plugin-json-table/blob/main/contributing.md).
 
 ## License
 
