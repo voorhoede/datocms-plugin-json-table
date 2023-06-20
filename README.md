@@ -59,7 +59,3 @@ Adding the same keys to the `Required fields` will result in having default valu
 ## Contributing
 
 See [contributing.md](https://github.com/voorhoede/datocms-plugin-json-table/blob/main/contributing.md).
-
-## License
-
-*MIT Licensed* by [De Voorhoede](https://www.voorhoede.nl).
