@@ -9,12 +9,12 @@ type Props = {
 export default function FieldExtensionConfigScreen({ ctx }: Props) {
   const pluginParameters = ctx.parameters
   const [addItemValue, setAddItemValue] = useState<boolean>(
-    Boolean(pluginParameters?.addItem)
+    Boolean(pluginParameters?.addItem),
   )
   const [requiredItemsValue, setRequiredItemsValue] = useState<string>(
     pluginParameters?.requiredFields
       ? String(pluginParameters?.requiredFields)
-      : ''
+      : '',
   )
 
   function handleAddItemChange(newValue: boolean) {

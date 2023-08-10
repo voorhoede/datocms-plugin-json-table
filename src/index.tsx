@@ -24,17 +24,19 @@ connect({
     return render(<ConfigScreen ctx={ctx} />)
   },
   manualFieldExtensions() {
-    return [{
-      id: fieldSettings.id,
-      name: fieldSettings.name,
-      type: 'editor',
-      fieldTypes: ['json'],
-      configurable: true,
-    }]
+    return [
+      {
+        id: fieldSettings.id,
+        name: fieldSettings.name,
+        type: 'editor',
+        fieldTypes: ['json'],
+        configurable: true,
+      },
+    ]
   },
   renderManualFieldExtensionConfigScreen(
     _,
-    ctx: RenderManualFieldExtensionConfigScreenCtx
+    ctx: RenderManualFieldExtensionConfigScreenCtx,
   ) {
     return render(<FieldExtensionConfigScreen ctx={ctx} />)
   },

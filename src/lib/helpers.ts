@@ -1,7 +1,7 @@
 interface ObjectType {
-  key: string;
-  value: string;
-  id: string;
+  key: string
+  value: string
+  id: string
 }
 
 export function objectToArray(obj: any): ObjectType[] {
