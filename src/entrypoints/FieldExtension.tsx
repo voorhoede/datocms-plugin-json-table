@@ -1,5 +1,5 @@
 import get from 'lodash/get'
-import { RenderFieldExtensionCtx  } from 'datocms-plugin-sdk'
+import { RenderFieldExtensionCtx } from 'datocms-plugin-sdk'
 import { Canvas } from 'datocms-react-ui'
 import AppHeader from '../components/AppHeader/AppHeader'
 import PairList from '../components/PairList/PairList'

@@ -99,7 +99,10 @@ export default function PairList({
                 width="1em"
                 height="1em"
               >
-                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" fill="currentColor"></path>
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  fill="currentColor"
+                ></path>
               </svg>
             }
             disabled={isKeyInArray(updatingValueList, '')}
@@ -110,7 +113,9 @@ export default function PairList({
         )}
       </Form>
       {existingElementKeys.length > 0 && (
-        <p className={styles.error}>All keys need to be unique. Saving this can result in data loss.</p>
+        <p className={styles.error}>
+          All keys need to be unique. Saving this can result in data loss.
+        </p>
       )}
     </>
   )
