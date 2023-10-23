@@ -35,13 +35,21 @@ export default function FieldExtension({ ctx }: Props) {
     }
   })
 
+  function objectToOutputArray(obj: { [key: string]: string }) {
+    return Object.keys(obj).map((key) => ({ key: key, value: obj[key] }))
+  }
+
   function handleUpdateField(updatedValueList: any[]) {
     const updatedValueObj = arrayToObj(updatedValueList)
     delete updatedValueObj['']
     const updatedFieldPath = JSON.stringify(updatedValueObj)
 
     if (JSON.stringify(parsedFieldValue) !== JSON.stringify(updatedValueObj)) {
-      ctx.setFieldValue(ctx.fieldPath, updatedFieldPath)
+      const newFieldPath = pluginParameters?.exportAsArray
+        ? JSON.stringify(objectToOutputArray(updatedValueObj))
+        : updatedFieldPath
+
+      ctx.setFieldValue(ctx.fieldPath, newFieldPath)
     }
   }
 

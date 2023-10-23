@@ -11,6 +11,13 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
   const [addItemValue, setAddItemValue] = useState<boolean>(
     Boolean(pluginParameters?.addItem),
   )
+
+  const [exportAsArrayValue, setExportAsArrayValue] = useState<boolean>(
+    pluginParameters?.exportAsArray
+      ? Boolean(pluginParameters?.exportAsArray)
+      : false,
+  )
+
   const [requiredItemsValue, setRequiredItemsValue] = useState<string>(
     pluginParameters?.requiredFields
       ? String(pluginParameters?.requiredFields)
@@ -20,6 +27,11 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
   function handleAddItemChange(newValue: boolean) {
     setAddItemValue(newValue)
     ctx.setParameters({ ...pluginParameters, addItem: newValue })
+  }
+
+  function handleExportAsArray(newValue: boolean) {
+    setExportAsArrayValue(newValue)
+    ctx.setParameters({ ...pluginParameters, exportAsArray: newValue })
   }
 
   function handleRequiredItemsChange(newValue: string) {
@@ -36,6 +48,14 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
           label="User may add item"
           value={addItemValue}
           onChange={handleAddItemChange}
+        />
+
+        <SwitchField
+          id="exportAsArray"
+          name="exportAsArray"
+          label="Export values as an array of key-value pairs"
+          value={exportAsArrayValue}
+          onChange={handleExportAsArray}
         />
 
         <TextField
