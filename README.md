@@ -36,7 +36,7 @@ There are two settings for configuration of the JSON table.
 
 If the `Editor may add item` (Default: `true`), the button with `+ ADD ITEM` will be shown. If this button is set to `false`, the editor will not be able to add any items.
 
-`Required fields` is a comma seperated list of keys that should be required. When a key is added to this list it will show automatically as an entry in the JSON table.
+`Required/Optional fields` is a comma seperated list of keys that should be required or optional and non editable. By default every entry becomes a required key. Add a question mark (?) at the end of the key to make it optional. Example: `key1, key2?, key3`. Where `key1`, `key2` and `key3` are non editable and only `key2` is optional. When a key is added to this list it will show automatically as an entry in the JSON table.
 
 ![](https://github.com/voorhoede/datocms-plugin-json-table/raw/main/docs/json-table-required-fields.jpg)
 
