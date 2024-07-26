@@ -1,6 +1,6 @@
 import { useState, MouseEvent } from 'react'
 import { Button, TextField, FieldGroup } from 'datocms-react-ui'
-import styles from './KeyValuePair.module.css'
+import * as styles from './KeyValuePair.module.css'
 
 type Props = {
   id: string
@@ -9,8 +9,9 @@ type Props = {
   onValueChange: (value: string) => void
   onKeyChange: (value: string) => void
   onDeleteKey: (value: string) => void
-  isExisting: boolean
-  isRequired: boolean
+  isExisting?: boolean
+  isRequired?: boolean
+  isNonEditable?: boolean
 }
 
 export default function KeyValuePair({
@@ -22,10 +23,11 @@ export default function KeyValuePair({
   onDeleteKey,
   isExisting,
   isRequired,
+  isNonEditable,
 }: Props) {
   const [inputKey, setInputKey] = useState<string>(keyPair)
   const [inputValue, setInputValue] = useState<string>(valuePair)
-  const inputIsDisabled: boolean = id.indexOf('default') === 0 && isRequired
+  const inputIsDisabled = id.indexOf('default') === 0 && isNonEditable
 
   function handleKeyChange(newValue: string) {
     onKeyChange(newValue)

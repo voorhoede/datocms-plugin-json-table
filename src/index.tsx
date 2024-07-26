@@ -11,7 +11,6 @@ import ConfigScreen from './entrypoints/ConfigScreen'
 import FieldExtension from './entrypoints/FieldExtension'
 import FieldExtensionConfigScreen from './entrypoints/FieldExtensionConfigScreen'
 
-import 'datocms-react-ui/styles.css'
 import './styles/index.css'
 
 const fieldSettings = {

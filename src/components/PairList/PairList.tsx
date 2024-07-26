@@ -1,13 +1,17 @@
 import { useState, useEffect, MouseEvent } from 'react'
 import { Button, Form } from 'datocms-react-ui'
 import KeyValuePair from '../KeyValuePair/KeyValuePair'
-import { isKeyInArray, getDoubleKeysFromArray } from '../../lib/helpers'
-import styles from './PairList.module.css'
+import {
+  isKeyInArray,
+  getDoubleKeysFromArray,
+  type ObjectType,
+} from '../../lib/helpers'
+import * as styles from './PairList.module.css'
 
 type Props = {
-  valueList: any[]
+  valueList: ObjectType[]
   mayAddItem: boolean
-  onUpdateField: (list: any[]) => void
+  onUpdateField: (list: ObjectType[]) => void
 }
 
 export default function PairList({
@@ -15,11 +19,12 @@ export default function PairList({
   mayAddItem,
   onUpdateField,
 }: Props) {
-  const [updatingValueList, setUpdatingValueList] = useState<any[]>(valueList)
+  const [updatingValueList, setUpdatingValueList] =
+    useState<ObjectType[]>(valueList)
   const [newItemId, setNewItemId] = useState<number>(0)
-  const [existingElementKeys, setExistingElementKeys] = useState<any[]>([])
+  const [existingElementKeys, setExistingElementKeys] = useState<string[]>([])
 
-  function handleUpdateField(updatedValueList: any[]) {
+  function handleUpdateField(updatedValueList: ObjectType[]) {
     setUpdatingValueList(updatedValueList)
     onUpdateField(updatedValueList)
   }
@@ -85,6 +90,7 @@ export default function PairList({
                 onDeleteKey={() => deleteItem(item.id)}
                 isExisting={existingElementKeys.some((key) => key === item.key)}
                 isRequired={item.isRequired}
+                isNonEditable={item.isNonEditable}
               />
             )
           })}

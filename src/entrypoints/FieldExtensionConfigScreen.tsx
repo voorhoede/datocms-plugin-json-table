@@ -41,8 +41,8 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
         <TextField
           id="requiredFields"
           name="requiredFields"
-          label="Required fields"
-          hint="A comma separated list of keys that should be required"
+          label="Required/Optional fields"
+          hint="A comma separated list of keys that should be required. Add a question mark (?) at the end of the key to make it optional. Example: key1, key2?, key3"
           value={requiredItemsValue}
           onChange={handleRequiredItemsChange}
         />
