@@ -1,8 +1,7 @@
 import { useState, useEffect, MouseEvent } from 'react'
 import { Button, Form } from 'datocms-react-ui'
 import KeyValuePair from '../KeyValuePair/KeyValuePair'
-import { isKeyInArray, getDoubleKeysFromArray } from '../../lib/helpers'
-import styles from './PairList.module.css'
+import * as styles from './PairList.module.css'
 
 type Props = {
   valueList: any[]

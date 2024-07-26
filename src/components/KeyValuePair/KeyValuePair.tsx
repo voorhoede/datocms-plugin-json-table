@@ -1,6 +1,6 @@
 import { useState, MouseEvent } from 'react'
 import { Button, TextField, FieldGroup } from 'datocms-react-ui'
-import styles from './KeyValuePair.module.css'
+import * as styles from './KeyValuePair.module.css'
 
 type Props = {
   id: string

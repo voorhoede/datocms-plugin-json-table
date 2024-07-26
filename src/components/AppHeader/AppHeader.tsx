@@ -1,4 +1,4 @@
-import styles from './AppHeader.module.css'
+import * as styles from './AppHeader.module.css'
 
 export default function AppHeader() {
   // This header is only a visual component. It shouldn't be picked up by i.e. screen readers.
