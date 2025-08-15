@@ -1,12 +1,11 @@
 import { useState, useEffect, MouseEvent } from 'react'
-import { Button, Form } from 'datocms-react-ui'
+import { Button, FieldError, Form } from 'datocms-react-ui'
 import KeyValuePair from '../KeyValuePair/KeyValuePair'
 import {
   isKeyInArray,
   getDoubleKeysFromArray,
   type ObjectType,
 } from '../../lib/helpers'
-import * as styles from './PairList.module.css'
 
 type Props = {
   valueList: ObjectType[]
@@ -53,6 +52,7 @@ export default function PairList({
   }
 
   function handleValueChange(value: string, index: number) {
+    console.log(value)
     const newObj = {
       ...updatingValueList[index],
       value: value,
@@ -119,9 +119,9 @@ export default function PairList({
         )}
       </Form>
       {existingElementKeys.length > 0 && (
-        <p className={styles.error}>
+        <FieldError>
           All keys need to be unique. Saving this can result in data loss.
-        </p>
+        </FieldError>
       )}
     </>
   )

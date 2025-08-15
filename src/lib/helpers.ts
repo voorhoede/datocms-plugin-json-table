@@ -66,7 +66,7 @@ export function updateKey(
 
 export function getOptionalField(field: string): string {
   const isOptionalField =
-    field.indexOf(optionalFieldSuffix) === field.length - 1
+    field.lastIndexOf(optionalFieldSuffix) === field.length - 1
   if (isOptionalField) {
     return field.slice(0, field.lastIndexOf(optionalFieldSuffix))
   }

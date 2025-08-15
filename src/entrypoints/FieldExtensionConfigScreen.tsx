@@ -1,20 +1,26 @@
 import { useState } from 'react'
 import { RenderManualFieldExtensionConfigScreenCtx } from 'datocms-plugin-sdk'
 import { Canvas, Form, SwitchField, TextField } from 'datocms-react-ui'
+import { type PluginParameters } from '../lib/types'
 
 type Props = {
   ctx: RenderManualFieldExtensionConfigScreenCtx
 }
 
 export default function FieldExtensionConfigScreen({ ctx }: Props) {
-  const pluginParameters = ctx.parameters
-  const [addItemValue, setAddItemValue] = useState<boolean>(
+  const pluginParameters: PluginParameters = ctx.parameters
+  const [addItemValue, setAddItemValue] = useState(
     Boolean(pluginParameters?.addItem),
   )
-  const [requiredItemsValue, setRequiredItemsValue] = useState<string>(
+
+  const [requiredItemsValue, setRequiredItemsValue] = useState(
     pluginParameters?.requiredFields
       ? String(pluginParameters?.requiredFields)
       : '',
+  )
+
+  const [switchToJSONEditorValue, setSwitchToJSONEditorValue] = useState(
+    Boolean(pluginParameters?.switchToJSONEditor),
   )
 
   function handleAddItemChange(newValue: boolean) {
@@ -27,6 +33,11 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
     ctx.setParameters({ ...pluginParameters, requiredFields: newValue })
   }
 
+  function handleSetSwitchToJSONEditor(newValue: boolean) {
+    setSwitchToJSONEditorValue(newValue)
+    ctx.setParameters({ ...pluginParameters, switchToJSONEditor: newValue })
+  }
+
   return (
     <Canvas ctx={ctx}>
       <Form>
@@ -36,6 +47,14 @@ export default function FieldExtensionConfigScreen({ ctx }: Props) {
           label="User may add item"
           value={addItemValue}
           onChange={handleAddItemChange}
+        />
+
+        <SwitchField
+          id="switchToJSONEditor"
+          name="switchToJSONEditor"
+          label='Show button "Show JSON editor"'
+          value={switchToJSONEditorValue}
+          onChange={handleSetSwitchToJSONEditor}
         />
 
         <TextField
