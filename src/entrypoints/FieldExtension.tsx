@@ -45,13 +45,18 @@ export default function FieldExtension({ ctx }: Props) {
   }, parsedFieldValue)
 
   const valueList = objectToArray(valueObj).map((item) => {
+    const isOptionalField =
+      item.key.lastIndexOf('?') === item.key.length - 1 &&
+      requiredFields.indexOf(item.key) !== -1
     const isRequired =
       requiredFields.indexOf(item.key) !== -1 &&
-      item.key.indexOf('?') !== item.key.length - 1
+      item.key.lastIndexOf('?') !== item.key.length - 1
     const isNonEditable =
-      requiredFields.indexOf(item.key) !== -1 ||
-      item.key.indexOf('?') === item.key.length - 1
-    item.key = getOptionalField(item.key)
+      requiredFields.indexOf(item.key) !== -1 || isOptionalField
+
+    if (isOptionalField) {
+      item.key = getOptionalField(item.key)
+    }
 
     return {
       ...item,
