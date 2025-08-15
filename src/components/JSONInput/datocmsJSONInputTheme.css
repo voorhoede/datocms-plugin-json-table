@@ -1,0 +1,538 @@
+.JsonInput .CodeMirror-gutter-filler,
+.JsonInput .CodeMirror-scrollbar-filler {
+  background-color: #fff;
+}
+
+.JsonInput .CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+
+.JsonInput .CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.JsonInput .CodeMirror-guttermarker {
+  color: #000;
+}
+
+.JsonInput .CodeMirror-guttermarker-subtle {
+  color: #999;
+}
+
+.JsonInput .CodeMirror-cursor {
+  border-left: 1px solid #000;
+  border-right: none;
+  width: 0;
+}
+
+.JsonInput .CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+
+.JsonInput .CodeMirror-scroll {
+  margin-bottom: -30px;
+  margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: 0;
+  position: static;
+  font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif !important;
+}
+
+.JsonInput .CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+
+.JsonInput .CodeMirror-gutter-filler,
+.JsonInput .CodeMirror-hscrollbar,
+.JsonInput .CodeMirror-scrollbar-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+
+.JsonInput .CodeMirror-vscrollbar {
+  position: absolute;
+  z-index: 6;
+  display: none;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.JsonInput .CodeMirror-hscrollbar {
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.JsonInput .CodeMirror-scrollbar-filler {
+  right: 0;
+  bottom: 0;
+}
+
+.JsonInput .CodeMirror-gutter-filler {
+  left: 0;
+  bottom: 0;
+}
+
+.JsonInput .CodeMirror-gutters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+
+.JsonInput .CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+
+.JsonInput .CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: 0 0 !important;
+  border: none !important;
+  user-select: none;
+}
+
+.JsonInput .CodeMirror-gutter-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.JsonInput .CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+
+.JsonInput .CodeMirror-lines {
+  cursor: text;
+  min-height: 1px;
+  font-family:
+    Roboto Mono,
+    Menlo,
+    Bitstream Vera Sans Mono,
+    Consolas,
+    Courier,
+    monospace;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.JsonInput .CodeMirror pre {
+  border-radius: 0;
+  border-width: 0;
+  background: 0 0;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+}
+
+.JsonInput .CodeMirror-rtl pre {
+  direction: rtl;
+}
+
+.JsonInput .CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.JsonInput .CodeMirror-linebackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.JsonInput .CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+}
+
+.JsonInput .CodeMirror-code {
+  outline: 0;
+}
+
+.JsonInput .CodeMirror-gutter,
+.JsonInput .CodeMirror-gutters,
+.JsonInput .CodeMirror-linenumber,
+.JsonInput .CodeMirror-scroll,
+.JsonInput .CodeMirror-sizer {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.JsonInput .CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.JsonInput .CodeMirror-cursor {
+  position: absolute;
+}
+
+.JsonInput .CodeMirror-measure pre {
+  position: static;
+}
+
+.JsonInput div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.JsonInput .CodeMirror-focused div.CodeMirror-cursors,
+.JsonInput div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.JsonInput .CodeMirror-selected {
+  background: #d9d9d9;
+}
+
+.JsonInput .CodeMirror-focused .CodeMirror-selected {
+  background: #d7d4f0;
+}
+
+.JsonInput .CodeMirror-line::selection {
+  background: #d7d4f0;
+}
+
+.JsonInput .CodeMirror-line > span::selection,
+.JsonInput .CodeMirror-line > span > span::selection {
+  background: #d7d4f0;
+}
+
+.JsonInput .CodeMirror-crosshair {
+  cursor: crosshair;
+}
+
+.JsonInput .CodeMirror-line {
+  padding-left: 15px;
+}
+
+.JsonInput .CodeMirror-line::-moz-selection {
+  background: #d7d4f0;
+}
+
+.JsonInput .CodeMirror-line > span::-moz-selection,
+.JsonInput .CodeMirror-line > span > span::-moz-selection {
+  background: #d7d4f0;
+}
+
+@media print {
+  .JsonInput .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+.JsonInput span.CodeMirror-selectedtext {
+  background: 0 0;
+}
+
+.JsonInput .CodeMirror {
+  height: auto;
+  min-height: 60px;
+  border: 1px solid #f0f0f0;
+  border-top-width: 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  color: #34363a;
+  font-size: 13.8px;
+}
+
+.JsonInput .CodeMirror-scroll {
+  min-height: 60px;
+}
+
+.JsonInput .CodeMirror-fullscreen {
+  background: #fff;
+  position: fixed !important;
+  inset: 50px 0 0;
+  height: auto;
+  z-index: 10;
+}
+
+.JsonInput .CodeMirror-sided,
+.MarkdownInput .CodeMirror-sided {
+  width: 50% !important;
+}
+
+.JsonInput .editor-toolbar {
+  position: sticky;
+  top: -1px;
+  user-select: none;
+  padding: 3px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  z-index: 3;
+}
+
+.JsonInput .editor-toolbar.fullscreen {
+  width: 100%;
+  height: 50px;
+  white-space: nowrap;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 11;
+}
+
+.JsonInput .editor-toolbar.fullscreen:before {
+  width: 20px;
+  height: 50px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.JsonInput .editor-toolbar.fullscreen:after {
+  width: 20px;
+  height: 50px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0,
+    rgb(255, 255, 255) 100%
+  );
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.JsonInput .editor-toolbar button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  color: #34363a !important;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: 0;
+  border-radius: 3px;
+}
+
+.JsonInput .editor-toolbar button.active {
+  background-color: #ccc;
+}
+
+.JsonInput .editor-toolbar button:hover,
+.JsonInput .editor-toolbar button:focus {
+  background-color: var(--accent-color);
+  color: #fff !important;
+}
+
+.JsonInput .editor-toolbar button:hover:after,
+.JsonInput .editor-toolbar button:focus:after {
+  content: attr(title);
+  z-index: 1054;
+  text-align: center;
+  left: 0;
+  background: #222;
+  color: #fff;
+  padding: 5px 8px;
+  line-height: 1;
+  font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif !important;
+  font-size: 12px;
+  border-radius: 3px;
+  top: calc(100% + 3px);
+  white-space: nowrap;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.JsonInput .editor-toolbar button:before {
+  line-height: 30px;
+}
+
+.JsonInput .editor-toolbar i.separator {
+  display: inline-block;
+  width: 0;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #fff;
+  color: transparent;
+  text-indent: -10px;
+  margin: 0 6px;
+}
+
+.JsonInput .editor-toolbar button.fa-header-x:after {
+  font-family:
+    Arial,
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
+  font-size: 65%;
+  vertical-align: text-bottom;
+  position: relative;
+  top: 2px;
+}
+
+.JsonInput .editor-toolbar button.fa-header-1:after {
+  content: '1';
+}
+
+.JsonInput .editor-toolbar button.fa-header-2:after {
+  content: '2';
+}
+
+.JsonInput .editor-toolbar button.fa-header-3:after {
+  content: '3';
+}
+
+.JsonInput .editor-toolbar button.fa-header-bigger:after {
+  content: '\25b2';
+}
+
+.JsonInput .editor-toolbar button.fa-header-smaller:after {
+  content: '\25bc';
+}
+
+.JsonInput .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  pointer-events: none;
+  background: #fff;
+  border-color: transparent;
+  text-shadow: inherit;
+}
+
+@media only screen and (max-width: 700px) {
+  .JsonInput .editor-toolbar button.no-mobile {
+    display: none;
+  }
+}
+
+.JsonInput .editor-statusbar {
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #959694;
+  text-align: right;
+}
+
+.JsonInput .editor-statusbar span {
+  display: inline-block;
+  min-width: 4em;
+  margin-left: 1em;
+}
+
+.JsonInput .editor-preview,
+.JsonInput .editor-preview-side {
+  padding: 10px;
+  background: #fafafa;
+  overflow: auto;
+  display: none;
+  box-sizing: border-box;
+}
+
+.JsonInput .editor-statusbar .lines:before {
+  content: 'lines: ';
+}
+
+.JsonInput .editor-statusbar .words:before {
+  content: 'words: ';
+}
+
+.JsonInput .editor-statusbar .characters:before {
+  content: 'characters: ';
+}
+
+.JsonInput .editor-preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+}
+
+.JsonInput .editor-preview-side {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  top: 50px;
+  right: 0;
+  z-index: 9;
+  border: 1px solid #ddd;
+}
+
+.JsonInput .editor-preview-active,
+.JsonInput .editor-preview-active-side {
+  display: block;
+}
+
+.JsonInput .editor-preview-side > p {
+  margin-top: 0;
+}
+
+.JsonInput .editor-preview > p {
+  margin-top: 0;
+}
+
+.JsonInput .editor-preview pre,
+.JsonInput .editor-preview-side pre {
+  background: #eee;
+  margin-bottom: 10px;
+}
+
+.JsonInput .editor-preview table td,
+.JsonInput .editor-preview table th,
+.JsonInput .editor-preview-side table td,
+.JsonInput .editor-preview-side table th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.JsonInput .CodeMirror-scroll {
+  overflow-x: scroll !important;
+  overflow-y: clip !important;
+  position: relative;
+}
