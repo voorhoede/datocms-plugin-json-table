@@ -18,7 +18,8 @@ When you input a key and value the output will be:
 * Add keys and values
 * Output a simple JSON object
 * Make individual entries mandatory
-* Allow editor to add entries in the JSON table
+* Allow editors to add entries in the JSON table
+* Copy and paste the raw json in the json field editor
 
 For each entry in the JSON we show a key and value.
 
@@ -32,9 +33,11 @@ First add this plugin via DatoCMS Settings > Plugins > Add (`/admin/plugins/new`
 
 #### Settings
 
-There are two settings for configuration of the JSON table.
+There are three settings for configuration of the JSON table.
 
 If the `Editor may add item` (Default: `true`), the button with `+ ADD ITEM` will be shown. If this button is set to `false`, the editor will not be able to add any items.
+
+To copy and paste raw json the option `Show button "Show JSON editor"` (Default: `false`) can be activated. This will show a DatoCMS like JSON editor instead of the json table. This can be usefull to see the JSON structure or for copy and pasting large json objects.
 
 `Required/Optional fields` is a comma seperated list of keys that should be required or optional and non-editable. By default every entry becomes a required key. Add a question mark (?) at the end of the key to make it optional. Example: `key1, key2?, key3`. Where `key1`, `key2` and `key3` are non editable and only `key2` is optional. When a key is added to this list it will show automatically as an entry in the JSON table.
 
