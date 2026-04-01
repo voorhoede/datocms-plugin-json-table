@@ -3,9 +3,6 @@
   "homepage": "https://github.com/voorhoede/datocms-plugin-json-table",
   "version": "2.2.0",
   "description": "A plugin for DatoCMS that makes it possible to add/insert a key and value and output a simple JSON table",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "scripts": {
     "start": "cross-env BROWSER='none' PUBLIC_URL='/' webpack-dev-server --mode=development",
     "build": "cross-env PUBLIC_URL='.' webpack --mode=production",
@@ -62,7 +59,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/voorhoede/datocms-plugin-json-table.git"
+    "url": "git+https://github.com/voorhoede/datocms-plugin-json-table.git"
   },
   "author": "Voorhoede",
   "license": "ISC",
